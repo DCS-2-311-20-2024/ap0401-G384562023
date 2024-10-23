@@ -205,10 +205,10 @@ function init() {
           if ( ball.position.z < paddle.position.z ) {
             vz = -Math.abs(vz);
           }
-          if (ball.position.x > ball.position.x + (paddleL/2)){
+          if (ball.position.x > paddle.position.x + (paddleL/2)){
             vx = Math.abs(vx);
           }
-          else if ( ball.position.x < -(ball.position.x + (paddleL/2))) {
+          else if ( ball.position.x < -(paddle.position.x + (paddleL/2))) {
             vx = -Math.abs(vx);
           }
         }
